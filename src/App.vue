@@ -140,8 +140,9 @@ h1 {
 .quiz {
   background-color: #383a4b;
   padding: 1rem;
-  width: 100;
+  width: 100%;
   max-width: 640px;
+  border-radius: 0.5rem;
 }
 .quiz-info {
   display: flex;
@@ -158,8 +159,62 @@ h1 {
   font-size: 1.25rem;
 }
 .options {
+  margin-bottom: 1rem;
+}
+.option {
   display: block;
   padding: 1rem;
   background-color: #271c36;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #2d213f;
+}
+.option.correct {
+  background-color: #2cce7d;
+}
+.option.wrong {
+  background-color: #ff5a5f;
+}
+
+.option:last-of-type {
+  margin-bottom: 0;
+}
+
+.option.disabled {
+  opacity: 0.5;
+}
+.option input {
+  display: none;
+}
+
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #2cce7d;
+  color: #2d213f;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+button:disabled {
+  opacity: 0.5;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+p {
+  color: #8f8f8f;
+  font-size: 1.25rem;
+  text-align: center;
 }
 </style>
